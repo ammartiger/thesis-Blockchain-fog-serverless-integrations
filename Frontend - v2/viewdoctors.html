@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="viewdoctors.js"></script>
+    <link rel="stylesheet" href="viewpatients.css" />
+    <title>View Doctors</title>
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.6.4.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <script src="doctorslogin.js"></script>
+  </head>
+  <body>
+    <button id="user" onclick="web3_metamask_login()">
+      Login with MetaMask
+    </button>
+    <input type="button" onclick="tableFrom()" value="View Doctors" />
+    <input type="button" onclick="tableForAdmin()" value="View Admin" />
+    <input type="button" onclick="tableForPhi()" value="View PHI" />
+    <input
+      type="button"
+      onclick="tableForPrescriptions()"
+      value="View Prescriptions"
+    />
+    <div style="display: flex; flex: column; justify-content: space-around">
+      <div>
+        <p>Search for Patients Medical Records (PHI)</p>
+        <input type="text" id="ssn" />
+        <input type="button" onclick="searchSsn()" value="Search" />
+      </div>
+      <div>
+        <p>Search for Prescriptions</p>
+        <input type="text" id="fprescriptions" />
+        <input type="button" onclick="searchPrescriptions()" value="Search" />
+      </div>
+    </div>
+    <p id="showData"></p>
+  </body>
+</html>

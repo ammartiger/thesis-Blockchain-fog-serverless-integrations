@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Add Patients</title>
+  </head>
+  <body>
+    <div>
+      <hr />
+      <h1>Add PHI</h1>
+      <hr />
+      <div >
+      <form action="http://localhost:3001/addpatientshealthdata" method="POST">
+        
+          <label for="ssn">SSN</label>
+          <input type="text" name="ssn" >
+      
+          <label for="wallet">Wallet</label>
+          <input type="text" name="wallet" >
+
+          <label for="name">Name</label>
+          <input type="text" name="name" >
+
+          <label for="Diseases">Permanent Diseases</label>
+          <input type="text" name="Diseases" >
+
+          <label for="healthPlan">Health Plan</label>
+          <input type="text" name="healthPlan" >
+
+          <label for="responsibleClinician">Responsible Clinician Wallet</label>
+          <input type="text" name="responsibleClinician" >
+
+          <label for="payment">Payment method</label>
+          <input type="text" name="payment" >
+
+        <!--Other fields-->
+        <input type="submit" value="Submit">
+      </form>
+      
+    </div>
+  </body>
+</html>

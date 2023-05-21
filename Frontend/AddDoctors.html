@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Add Doctors</title>
+  </head>
+  <body>
+    <div>
+      <hr />
+      <h1>Add a new Doctor</h1>
+      <hr />
+      <div >
+      <form action="http://localhost:3001/adddoctors" method="POST">
+        
+          <label for="ssn">SSN</label>
+          <input type="text" name="ssn" >
+      
+          <label for="name">Name</label>
+          <input type="text" name="name" >
+
+          <label for="address">Address</label>
+          <input type="text" name="address" >
+
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" >
+
+          <label for="wallet">Wallet</label>
+          <input type="text" name="wallet" >
+        <!--Other fields-->
+        <input type="submit" value="Submit">
+      </form>
+      
+    </div>
+  </body>
+</html>
